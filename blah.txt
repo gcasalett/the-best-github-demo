@@ -4,6 +4,10 @@ Hey again.
 
 Hi there
 
+<<<<<<< HEAD
 goodbye!!!!
+=======
+byebye
+>>>>>>> 5a42211eaf34d2850f813222ffac67386a13bc8b
 
 
