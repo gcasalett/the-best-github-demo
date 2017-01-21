@@ -1,6 +1,7 @@
 # Welcome to The Best GitHub Demo Ever!
 
-Here are some commands that could be helpful:
+Here are some commands that may be helpful:
+
 https://github.com/gcasalett/the-best-github-demo/blob/master/some-git-commands.md
 
 ### Fun things you can do from GitHub.com:
