@@ -1,5 +1,8 @@
 # Welcome to The Best GitHub Demo Ever!
 
+Here are some commands that could be helpful:
+https://github.com/gcasalett/the-best-github-demo/blob/master/some-git-commands.md
+
 ### Fun things you can do from GitHub.com:
 
 - Create your own branch (make sure your name is in the branch name somewhere)
