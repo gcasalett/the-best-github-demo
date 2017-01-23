@@ -20,5 +20,5 @@ https://github.com/gcasalett/the-best-github-demo/blob/master/some-git-commands.
 
 ### Reference materials:
 - [Some Git Commands](https://github.com/gcasalett/the-best-github-demo/blob/master/some-git-commands.md)
-- [Content from Firebase](https://unc.bootcampcontent.com/UNC-Coding-Boot-Camp/11-16-Class-Content/tree/master/08-api-project/1-Class-Content/8.2)
+- [Content from GitLab](https://unc.bootcampcontent.com/UNC-Coding-Boot-Camp/11-16-Class-Content/tree/master/08-api-project/1-Class-Content/8.2)
 - [Commands from Kevin's class demo](https://unc1101.slack.com/archives/project1-api/p1484700802000060)
