@@ -8,7 +8,7 @@ Grab all changes and get them ready to commit (a.k.a. "staging" your changes):
 Commit changes (save a snapshot in the history of your repo):  
 `$ git commit -m "My commit message"`
 
-Grab all the latest commits from the repo's source (in our case, GitHub):  
+Grab all the latest commits from the repo's source (in our case, GitHub) and merge them into your local branch:  
 `$ git pull`
 
 Push your latest commits to the source (note: this only pushes changes from the branch you are currently working on):   
@@ -38,7 +38,7 @@ If you create a branch locally, copy it it GitHub:
 `$ git push -u origin [branch-name]`
 
 If you create a branch in GitHub, create a local copy:  
-`$ git fetch`  -> This tells your local repo what branches exist in GitHub  
+`$ git fetch`  -> Updates your local list of branches that exist in GitHub  
 `$ git checkout origin/[new-branch-in-github]`  -> This creates a preview of the remote branch. You can't edit this yet!  
 `$ git checkout -b [new-branch-in-github] origin/[new-branch-in-github]`  -> The first [name] is what the branch will be called locally. The branch names should always match.
 
