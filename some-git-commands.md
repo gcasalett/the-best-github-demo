@@ -1,63 +1,66 @@
-# Git Branches!
+# Quick list of useful Git commands:
+
+### General
+
+Grab all changes and get them ready to commit (a.k.a. "staging" your changes):  
+`$ git add -A`
+
+You can see which files will be staged if you run add, and which files are already staged. Usually unstaged files are in red, staged files in green.  
+ `$ git status`
+
+Commit changes (save a snapshot in the history of your repo):  
+`$ git commit -m "My commit message"`
+
+Grab all the latest commits from the repo's source (in our case, GitHub) and merge them into your local branch:  
+`$ git pull`
+
+Push your latest commits to the source (note: this only pushes changes from the branch you are currently working on):   
+`$ git push`
+
+For safety's sake, if you're not on master, specify which branch you're pushing to:  
+`$ git push origin [my-branch]`
+
+### Branches
+
+List local branches, see which one is active (checked out):  
+`$ git branch`
+
+Create a new branch:   
+`$ git branch [new-branch-name]`
+
+Delete a branch:   
+`$ git branch -D [branch-to-be-deleted]`
+
+Create a new branch and immediately switch to it:   
+`$ git checkout -b [new-branch-name]`
+
+Switch to another branch:  
+`$ git checkout [brach-name]`
+
+If you create a branch locally, copy it it GitHub:  
+`$ git push -u origin [branch-name]`
+
+If you create a branch in GitHub, create a local copy:  
+`$ git fetch`  -> Updates your local list of branches that exist in GitHub  
+`$ git checkout origin/[new-branch-in-github]`  -> This creates a preview of the remote branch. You can't edit this yet!  
+`$ git checkout -b [new-branch-in-github] origin/[new-branch-in-github]`  -> The first [name] is what the branch will be called locally. The branch names should always match.
+
+### Merging
+
+Given two branches, merge the changes from branch-1 into branch-2. **Note:** This only works one way; in this case branch-2 will get the changes from branch-1, but branch-1 will remain unchanged:  
+`$ git checkout branch-2`  
+`$ git merge branch-1 -m "Merge comment goes here"`
+
+## Some things to remember
+
+1. After fixing a merge conflict, you always have to add and commit changes to finalize the pull/push/merge
+2. When collaborating, always remember to do all your work on your own branch. Don't mess with master!
+3. Sometimes you may end up in Vi (or Vim), which is a hellish text editor for the command line. This can happen after fixing a merge conflict, or if you forget to add a message to a commit or merge command. **to exit Vim**:
+  - Press the escape (esc) key
+  - Then type ":x" (without the quotes). This should appear at the bottom of the window
+  - Press enter
 
 ## Links
 
-Read this tutorial first:
-https://guides.github.com/activities/hello-world/
-
-This is how you set Sublime Text as your default text editor for Git
+This is how you set Sublime Text as your default text editor for Git (so you don't end up in Vim):
 http://stackoverflow.com/questions/8951275/how-can-i-make-sublime-text-the-default-editor-for-git
-
-
-## Part 1: Branches
-- Create a GitHub repo
-- Clone the repo locally
-- Create file, put some content in it
-- Create new branch
-  `git branch new-1`
-
-- Switch to new branch
-  `git checkout new-1`
-
-- Open existing file, change it
-- Add and commit changes (you can't switch branches without doing a commit first)
-- Switch back to master, see how file changed
-- Switch back to new-1
-- Now we're going to create a copy of this branch up in GitHub
-  `git push -u origin new-1`
-
-- Look at new branch in GitHub
-
-## Part 2: Creating a repo, invite others (do this with a partner)
-- Inviting others to collaborate:
-  - Under setttings > Collaborators add collaborator (using their email or GitHub user name)
-- Have your partner create their own branch on their computer, then push it up to GH
-  `git push -u origin [branch-name]`
-
-- Now get your partner's branch locally:
-  Viewing the branch (you can't save changes):
-  `git checkout origin/[new-branch-name]`
-
-  duplicating it locally (so you can save changes):
-  `git checkout -b [local-new-branch-name] origin/[new-branch]`
-
-  merging into master:
-  `git checkout master`
-  `git merge [local-new-branch]`
-
-- Have your partner make another change to their branch, create a pull request
-- Get the pull request (you'll get an email notification), accept and merge changes
-
-## Part 3: Collaborating on another's repo
-- Have your partner create a repo and invite you (following the steps above)
-- Accept the invitation
-- Clone the repo locally, create new branch, push
-- Make a pull request
-
-## Part 4: Merge conflicts
-- Edit file in GH
-- Edit same file locally, add, commit
-- Do a git pull
-- *** MERGE CONFLICT!!! ***
-- Open the file and see what it looks like
-- Make the file look like you want it to look, then add and commit again
