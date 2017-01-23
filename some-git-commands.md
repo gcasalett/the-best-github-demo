@@ -5,6 +5,9 @@
 Grab all changes and get them ready to commit (a.k.a. "staging" your changes):  
 `$ git add -A`
 
+You can see which files will be staged if you run add, and which files are already staged. Usually unstaged files are in red, staged files in green. 
+ `$ git status`
+
 Commit changes (save a snapshot in the history of your repo):  
 `$ git commit -m "My commit message"`
 
