@@ -60,7 +60,3 @@ Given two branches, merge the changes from branch-1 into branch-2. **Note:** Thi
   - Then type ":x" (without the quotes). This should appear at the bottom of the window
   - Press enter
 
-## Links
-
-This is how you set Sublime Text as your default text editor for Git (so you don't end up in Vim):
-http://stackoverflow.com/questions/8951275/how-can-i-make-sublime-text-the-default-editor-for-git
